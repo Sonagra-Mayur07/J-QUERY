@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .slide {
+            display: block;
+            /* width: 150px;
+            height: 30px; */
+            /* font-size: 22px;
+            background-color: gray; */
+            display: none;
+        }
+        a {
+            display: block;
+            width: 150px;
+            height: 30px;
+            font-size: 22px;
+            background-color: gray;
+            text-decoration: none;
+            /* display: none; */
+        }
+        .bt
+        {
+            width: 150px;
+            height: 30px;   
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="slide" onclick="no()">
+        <button class="bt">Close &times;</button>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+    <div class="open" onclick="bl()">
+        <button>&#9776;</button>
+    </div>
+
+    <script>
+
+        var open = document.querySelector(".slide");
+
+        var close = document.querySelector(".open");
+
+        function no(){
+            open.style.display = "none";
+        }
+
+        function bl(){
+            open.style.display = "block";
+        }
+    </script>
+</body>
+</html>
